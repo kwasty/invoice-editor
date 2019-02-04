@@ -13,7 +13,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Invoice Editor</h2>
         </div>
-        <div className="Invoice">
+        <div className="App-container">
           <InvoiceContainer />
           <TotalAggregator />
         </div>

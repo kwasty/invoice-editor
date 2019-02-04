@@ -1,32 +1,11 @@
-How to submit:
+# Redux Invoice Editor App
 
-1. Start an empty local git repo/branch and commit the code found in bitbucket.org/itglue/invoice-editor/branches/master as the initial commit
+This is a simple invoice editor that allows the user to add, delete and edit items in the invoice with updates happening on the fly. Invoices do not persist, all functionality is implemented by using react and redux, testing is done using Jest and Babel.
 
-2. Build the application as per mentioned below
+## Running the app
 
-3. Push your code/commits somewhere and email us the link where we can easily view the diff, or download the code
+1. Clone this repository
+2. Run `npm install`
+3. Run `npm start`
 
-
-Part 1:
-Build an invoice editor in React that allows a user add, edit, or remove line items according to the text-based mockup below. Pricing should be updated on-the-fly as line items are added or edited. Don't worry about persisting invoices. Don't worry about styling.
-```
-Item                      Qty     Price       Total
---------------------------------------------------------
-Widget                   [ 2 ]  [ $10.00 ]  [ $20.00 ] x
-Cog                      [ 2 ]  [ $15.99 ]  [ $31.98 ] x
-[ New Item ]             [   ]  [        ]  [        ]
-                                    --------------------
-                                    Subtotal      $51.98
-                                    Tax (5%)       $2.60
-                                    Total         $54.58
-                                    --------------------
-```
-
-Part 2:
-Incorporate Redux into your application
-
-Part 3:
-Write Tests using the test framework of your choice
-
-Part 4:
-Make it beautiful and mobile responsive
+The example should be available at http://localhost:3000

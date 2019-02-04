@@ -1,0 +1,32 @@
+.Footer {
+    float: right;
+}
+
+.Footer th,
+.Footer td {
+    padding: 15px;
+	background-color: rgba(255, 255, 255, 0.4);
+    height: 20px;
+    text-align: left;
+}
+
+.Footer input {
+}
+
+.Footer input:focus {
+    outline: none;
+}
+
+.Footer .Left {
+    width: 150px;
+}
+
+.Footer .Right {
+    width: 250px;
+    text-align: right;
+}
+
+.Footer input {
+    width: 25%;
+    text-align: right;
+}

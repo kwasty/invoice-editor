@@ -1,0 +1,71 @@
+.Invoice {
+    
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+	overflow: hidden;
+    
+}
+
+.Invoice tr {
+    
+    height: 50px;
+}
+
+.Invoice th,
+.Invoice td {
+    padding: 15px;
+	background-color: rgba(255, 255, 255, 0.4);
+    height: 20px;
+    width: 20%;
+    text-align: left;
+}
+
+.Invoice thead tr > th:last-of-type,
+.Invoice tbody tr > td:last-of-type {
+    padding: 0px;
+    width: 10%;
+    text-align: center;
+}
+
+.Invoice thead th {
+    background-color: #55608f;
+}
+
+.Invoice input:focus {
+    outline: none;
+}
+
+.Delete {
+    opacity: 0.3;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+.Delete:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Delete:after {
+    content: '✖';
+}
+
+.NewItem {
+	background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.NewItem:hover {
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.Invoice .input[name='itemName']:before{
+    content: '$';
+} 

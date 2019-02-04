@@ -1,3 +1,6 @@
+@import url("Footer.css");
+@import url("Invoice.css");
+
 .App {
   text-align: center;
 }
@@ -16,6 +19,40 @@
 
 .App-intro {
   font-size: large;
+}
+
+.App-container {
+  padding-top: 5%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+  border: none;
+  background: transparent;
+  text-align:left;
+  width: 90%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+tbody td:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.Validate {
+  display: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(200, 0, 0);
 }
 
 @keyframes App-logo-spin {

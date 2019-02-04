@@ -4,22 +4,25 @@ import Invoice from '../components/Invoice'
 
 const dispatchUpdateByEventName = (dispatch, item, event) => {
     switch (event.target.name) {
-        case 'name':
+        case 'itemName':
             dispatch(updateItem({
                 ...item,
                 name: event.target.value
             }));
+            break;
         case 'quantity':
             dispatch(updateItem({
                 ...item,
                 quantity: event.target.value
                 
             }));
+            break;
         case 'price':
             dispatch(updateItem({
                 ...item,
                 price: event.target.value
             }));
+            break;
         default: 
             dispatch(updateItem(item));
     }
