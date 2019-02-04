@@ -14,12 +14,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "jest",
+    "test": "react-scripts test --env=jsdom",
     "test:watch": "npm test -- --watch"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.3.1",
-    "babel-jest": "^24.0.0",
-    "jest": "^24.0.0"
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-jest": "^24.0.0"
   }
 }

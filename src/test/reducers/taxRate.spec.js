@@ -1,4 +1,4 @@
-import reducer from '../../src/reducers/taxRate'
+import reducer from '../../reducers/taxRate'
 
 describe('tax reducer', () => {
     it('should return the initial state', () => {

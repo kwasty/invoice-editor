@@ -1,4 +1,4 @@
-import * as utils from '../../src/util/util'
+import * as utils from '../../util/util'
 
 describe('utils', () => {
     it('should return the subtotal of all items', () => {

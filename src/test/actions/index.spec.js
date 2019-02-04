@@ -1,4 +1,4 @@
-import * as actions from '../../src/actions/index';
+import * as actions from '../../actions/index';
 
 describe('actions', () => {
   it('should create an action to add an item', () => {
