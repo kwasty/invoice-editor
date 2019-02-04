@@ -73,12 +73,6 @@
     white-space: nowrap;
 }
 
-@media only screen and (max-height: 500px) {
-    .Invoice .InvoiceBody {
-        height: 50px;
-    }
-}
-
 @media only screen and (max-height: 800px) {
     .Invoice .InvoiceBody {
         height: 150px;
