@@ -62,13 +62,26 @@
     cursor: pointer;
 }
 
-.Invoice .input[name='itemName']:before{
-    content: '$';
-} 
-
 .Invoice .InvoiceBody {
     overflow: auto;
-    height: 350px;
+    height: 330px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.Invoice .PriceTableData {
+    white-space: nowrap;
+}
+
+@media only screen and (max-height: 500px) {
+    .Invoice .InvoiceBody {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .Invoice .InvoiceBody {
+        height: 150px;
+    }
+}
+

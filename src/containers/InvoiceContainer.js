@@ -29,16 +29,16 @@ const dispatchUpdateByEventName = (dispatch, item, event) => {
 }
 
 const mapStateToProps = state => ({
-  items: state.items
-})
+    items: state.items
+});
 
 const mapDispatchToProps = (dispatch) => ({
-  onAddItem: () => dispatch(addItem()),
-  onRemoveItem: id => dispatch(removeItem(id)),
-  onUpdateItem: (item, event) => dispatchUpdateByEventName(dispatch, item, event)
-})
+    onAddItem: () => dispatch(addItem()),
+    onRemoveItem: id => dispatch(removeItem(id)),
+    onUpdateItem: (item, event) => dispatchUpdateByEventName(dispatch, item, event)
+});
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Invoice)
+    mapStateToProps,
+    mapDispatchToProps
+)(Invoice);

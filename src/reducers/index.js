@@ -5,4 +5,4 @@ import taxRate from './taxRate'
 export default combineReducers({
     items,
     taxRate
-})
+});

@@ -48,8 +48,8 @@ class Invoice extends React.Component {
                     
                 </div>
                 <div onClick={this.props.onAddItem} className='NewItem'>
-                                    {'New Item'}
-                                </div>
+                    {'New Item'}
+                </div>
                 
                 
             </div>
@@ -57,4 +57,4 @@ class Invoice extends React.Component {
     }
 }
 
-export default Invoice
+export default Invoice;

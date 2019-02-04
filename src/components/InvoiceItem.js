@@ -18,7 +18,7 @@ class InvoiceItem extends React.Component {
         let msg = '';
         if (e.target.value < 0) {
             display = 'inherit';
-            msg = 'Quantity must be greater than 0.';
+            msg = 'Quantity must be greater than or equal to 0.';
         } else if (e.target.value % 1 !== 0) {
             display = 'inherit';
             msg = 'Quantity must be an integer (e.g. 0, 1, 2...).';
@@ -63,7 +63,7 @@ class InvoiceItem extends React.Component {
                     <p className='Validate' ref='quantityValidate'></p>
                 </td>
 
-                <td> 
+                <td className='PriceTableData'> 
                     {'$'}
                     <input 
                         name='price'
@@ -88,4 +88,4 @@ class InvoiceItem extends React.Component {
     }
 }
 
-export default InvoiceItem
+export default InvoiceItem;

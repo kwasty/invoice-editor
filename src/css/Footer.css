@@ -10,9 +10,6 @@
     text-align: left;
 }
 
-.Footer input {
-}
-
 .Footer input:focus {
     outline: none;
 }
@@ -29,4 +26,5 @@
 .Footer input {
     width: 25%;
     text-align: right;
+    padding-right: 5%;
 }
