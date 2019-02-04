@@ -17,33 +17,40 @@ class Invoice extends React.Component {
         });
 
         return (
-            <div>
-                <table className='Invoice'>
+            <div className='Invoice'>
+                <table >
                     <thead>
                         <tr>
                             <th>
-                                {'Item'}
+                                {'ITEM'}
                             </th>
                             <th>
-                                {'Qty'}
+                                {'QTY'}
                             </th>
                             <th>
-                                {'Price'}
+                                {'PRICE'}
                             </th>
                             <th>
-                                {'Total'}
+                                {'TOTAL'}
                             </th>
                             <th>
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        {itemRows} 
-                    </tbody>
                 </table>
-                <div onClick={this.props.onAddItem} className='NewItem'>
-                    {'New Item'}
+                <div className='InvoiceBody'>
+                    <table>
+                        <tbody>
+                            {itemRows} 
+                        </tbody>
+                        
+                    </table>
+                    
                 </div>
+                <div onClick={this.props.onAddItem} className='NewItem'>
+                                    {'New Item'}
+                                </div>
+                
                 
             </div>
         )

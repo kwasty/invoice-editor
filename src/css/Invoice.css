@@ -1,14 +1,10 @@
-.Invoice {
-    
+.Invoice table {
     width: 100%;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     border-collapse: collapse;
-	overflow: hidden;
-    
 }
 
 .Invoice tr {
-    
     height: 50px;
 }
 
@@ -28,8 +24,8 @@
     text-align: center;
 }
 
-.Invoice thead th {
-    background-color: #55608f;
+.Invoice th {
+    background-color: #95A5A6;
 }
 
 .Invoice input:focus {
@@ -69,3 +65,10 @@
 .Invoice .input[name='itemName']:before{
     content: '$';
 } 
+
+.Invoice .InvoiceBody {
+    overflow: auto;
+    height: 350px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}

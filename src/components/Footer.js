@@ -30,7 +30,7 @@ class Footer extends React.Component {
                             {'Tax '}
                             <input 
                                 defaultValue={this.props.tax}
-                                type='number' min='0'
+                                type='number' min='0' step='0.01'
                                 onChange={(e) => {this.props.onChange(e); this.validateTax(e)}}
                             />
                             {'%'}
